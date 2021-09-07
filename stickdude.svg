@@ -1,0 +1,34 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:export-ydpi="96" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" width="50" xmlns:xlink="http://www.w3.org/1999/xlink" inkscape:export-xdpi="96" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" viewBox="0 0 50 50" style="fill:none;stroke:none;" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" height="50" version="1.1">
+    <defs/>
+    <sodipodi:namedview inkscape:document-units="px" bordercolor="#666666" borderlayer="true" pagecolor="#ffffff" inkscape:pagecheckerboard="true"/>
+    <title>Animation</title>
+    <g inkscape:groupmode="layer" id="MainComposition_7a9aba3f72fc4fdaab38f9597a39b7bc" inkscape:label="Animation">
+        <g transform="matrix(0.5, 0, 0, 0.5, 11.2963, 27.0586)" id="Group_f23538f5206f4cc8aecaf95a78382b44" opacity="1" inkscape:label="Path Group">
+            <g stroke-opacity="1" stroke-width="8" stroke="#bababa" style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" id="Stroke_aae0c217f021496eb1000765b1227673" inkscape:label="Stroke">
+                <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 25.0728,3.09222 C 29.7332,22.2272 29.0853,26.9171 28.5037,40.8026" sodipodi:nodetypes="cc">
+                    <animate values="M 25.0728,3.09222 C 28.6804,22.4186 27.4435,27.83 24.8666,41.2297; M 25.0728,3.09222 C 32.3653,21.7486 33.1899,24.6347 37.5963,39.7351; M 25.0728,3.09222 C 33.1899,20.3056 35.4575,25.2532 42.0542,37.2957; M 25.0728,3.09222 C 29.3,19.4899 38.0135,30.7015 42.3377,36.2306; M 25.0728,3.09222 C 30.0976,20.9241 28.2423,25.8716 30.2007,40.9977; M 25.0728,3.09222 C 28.6804,22.4186 26.5931,26.6962 25.2789,41.2297" begin="0.000000" dur="1.000000" attributeName="d" keySplines="0.000000 0.000000 1.000000 1.000000; 0.000000 0.000000 1.000000 1.000000; 0.000000 0.000000 1.000000 1.000000; 0.000000 0.000000 1.000000 1.000000; 0.000000 0.000000 1.000000 1.000000" repeatCount="indefinite" calcMode="spline" keyTimes="0.000000; 0.291667; 0.416667; 0.625000; 0.791667; 1.000000"/>
+                </path>
+                <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 27.6962,1.2796 C 27.6962,1.2796 40.4265,-14.9835 40.8712,-15.8728 40.9334,-15.9971 43.0463,2.27394 43.0463,2.27394" sodipodi:nodetypes="css"/>
+            </g>
+            <g stroke-opacity="1" transform="matrix(2, 0, 0, 2, -22.5927, -54.1172)" stroke-width="4" stroke="#bababa" id="Stroke_16696a89d965437783bdae036ee3f40c" fill="#000000" display="none" opacity="1" fill-opacity="1" inkscape:label="Path 4 Group">
+                <path style="" d="M 25.1444,27.6984 C 25.1444,27.6984 31.5096,19.5669 31.732,19.1222 31.763,19.06 32.8195,28.1956 32.8195,28.1956" sodipodi:nodetypes="css"/>
+                <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 25.1444,27.6984 C 25.1444,27.6984 31.5096,19.5669 31.732,19.1222 31.763,19.06 32.8195,28.1956 32.8195,28.1956" sodipodi:nodetypes="css"/>
+            </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 0, 0)" id="Fill_57cfdfd10a67438b8ffe54f2febc8792" fill="#bababa" opacity="1" fill-opacity="1" inkscape:label="Ellipse Group">
+            <ellipse rx="3.88416" ry="4.07836" style="" cx="18.9298" cy="12.1618"/>
+        </g>
+        <g stroke-opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="6" stroke="#bababa" id="Stroke_a3ca6c24d7964ec08c1019c448688960" fill="#000000" opacity="1" fill-opacity="1" inkscape:label="Path 1 Group">
+            <path style="" d="M 17.9526,17.5642 C 18.5352,22.2251 19.615,24.4702 23.8876,27.7717" sodipodi:nodetypes="cs"/>
+            <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 17.9526,17.5642 C 18.5352,22.2251 19.615,24.4702 23.8876,27.7717" sodipodi:nodetypes="cs"/>
+        </g>
+        <g stroke-opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="3" stroke="#bababa" id="Stroke_9e17078e515a4cc3944160b371e29676" fill="#000000" opacity="1" fill-opacity="1" inkscape:label="Path 2 Group">
+            <path style="" d="M 15.0239,16.1969 C 13.6645,23.1884 9.32198,28.5486 9.32198,28.5486" sodipodi:nodetypes="cs"/>
+            <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 15.0239,16.1969 C 13.6645,23.1884 9.32198,28.5486 9.32198,28.5486" sodipodi:nodetypes="cs"/>
+        </g>
+        <g stroke-opacity="1" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="3" stroke="#bababa" id="Stroke_5431947de021453e9cba3f4883a5461c" fill="#000000" opacity="1" fill-opacity="1" inkscape:label="Path 2 Group 1">
+            <path style="" d="M 21.1687,15.7541 C 19.8092,22.7456 19.0324,28.5486 19.0324,28.5486" sodipodi:nodetypes="cs"/>
+            <path style="fill:none;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:round;" d="M 21.1687,15.7541 C 19.8092,22.7456 19.0324,28.5486 19.0324,28.5486" sodipodi:nodetypes="cs"/>
+        </g>
+    </g>
+</svg>
