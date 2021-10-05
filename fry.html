@@ -1,0 +1,81 @@
+<style>
+
+body{
+    background-color: black;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align:center;
+    font-size: 48pt;
+}
+
+#the_scrollable_video {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+*{ /*resets default extra spacing etc*/
+margin: 0;
+padding: 0;
+max-width: 100%;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+</style>
+
+
+<div class="hero screen" style="background:transparent; color:yellow">
+    <div></div>
+    <h1>FRYING PANS</h1>
+</div>
+
+<div class=screen style="background: rgb(165, 139, 104); color:white">
+    <h1>wow</h1>
+</div>
+
+<div class=screen style="background: red; color:white">
+    <h1>cool</h1>
+</div>
+
+<div class=screen style="background: white;">
+    <h1>good stuff</h1>
+</div>
+
+<video id=the_scrollable_video src="fryingpan.webm"> </video>
+
+
+<script>
+Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+var vid = document.getElementById('the_scrollable_video')
+vid.pause()
+window.onscroll = function() { 
+    vid.currentTime = window.pageYOffset*0.1 
+    vid.style.opacity = window.pageYOffset.map(250,350, 1.0,0.0)
+}
+</script>
