@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+
+
+<nav>
+<ul>
+    <li>Client Å</li>
+    <li>Client B</li>
+    <li>Client C</li>
+</ul>
+<ul>
+    <li>About</li>
+</ul>
+</nav>
+
+<section>
+    <p>text text text</p>
+    <div class=gallery>
+        <video></video>
+        <video></video>
+        <video></video>
+    </div>
+</section>
+
+<aside>
+    foo bar baz
+</aside>
+
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+}
+
+nav {
+    -background: lightblue;
+    color: white;
+    padding: 1ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    flex-grow: 1;
+    background: #d8dee6;
+    border-radius: 1ch;
+    margin: 3ch;
+    box-shadow: 0 0 3ch rgb(0 0 0 / 20%);
+    border: 1px solid #c1ccd9;
+    overflow: scroll;
+}
+section p{
+    padding: 2ch;
+}
+
+aside{
+    background: pink;
+    padding: 1ch;
+    text-align: center;
+}
+
+</style>
+
+<style>
+@media (orientation: portrait) {
+
+    
+body { 
+   flex-direction: column;
+   flex-direction: column-reverse;
+}
+
+nav{
+    background: lightblue;
+    padding: 1ch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+section{
+    margin: 2ch;
+}
+
+
+}
+</style>
+
+<style>
+.gallery{
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+video {
+    background: #333;
+    border-radius: 4px;
+    width: 25%;
+}
+</style>
