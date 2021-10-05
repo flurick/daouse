@@ -65,7 +65,7 @@ max-width: 100%;
     <h1>good stuff</h1>
 </div>
 
-<video id=the_scrollable_video src="fryingpan.webm"> </video>
+<video id=the_scrollable_video src="fryingpan.mp4"> </video>
 
 
 <script>
@@ -75,7 +75,8 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 var vid = document.getElementById('the_scrollable_video')
 vid.pause()
 window.onscroll = function() { 
-    vid.currentTime = window.pageYOffset*0.1 
+    //vid.currentTime = window.pageYOffset*0.1 
+    vid.currentTime = document.body.scrollTop*0.1 
     vid.style.opacity = window.pageYOffset.map(250,350, 1.0,0.0)
 }
 </script>
