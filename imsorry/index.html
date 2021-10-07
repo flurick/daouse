@@ -1,36 +1,54 @@
-<section class=hero>
+<section class=page1>
     <p>coming this fall</p>
     <img class=hero_img src="imsorry.svg">
     <p>A short illustrated animation 
     on waking up too early from a dream 
     or maybe it is really about
     dreaming to early from a wakeup?</p>
+    <p>2021</p>
 </section>
 
-<section class=page1>
+<div style="height: 100vh;"></div>
+
+<section class=page>
+    <h1>w1/8</h1>
     <p>Early sketches of the three main scenes and environments.</p>
     <img src="environments.png">
-    <p>Fall 2021</p>
 </section>
 
+
+<section class=page>
+    <h1>w2/8</h1>
+    <p>Getting to know one of the three characters.</p>
+    <img src="man.jpg">
+    <p>⬜⬛⬜⬛</p>
+    <p>Intro sequence, this part I was thinking for a long time would be 3D but it will probably read just as well if not better drawn.</p>
+    <video src="egg sun.mp4" controls></video>
+</section>
 
 <style>
     *{margin:0; padding:0; box-sizing: border-box; font: normal 12pt mono; max-width:100%}
-    section{height:100vh;width:100vw}
+    section{min-height:100vh;width:100vw}
     p{max-width: 40ch; text-align: center;}
     img{max-height: 62vh;}
-    .hero{
-        background: #F4C930;
+    .page{
+        background: #fff;
         text-align: center;
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-evenly;
         margin-bottom:100vh;
         z-index: 10;
+        width: 90vw;
+        margin: 50px auto;
+        box-shadow: 0 0 40px rgba(0,0,0, 0.2);
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 50px;
     }
     .page1{
         position: fixed;
+        background: #F4C930;
         top: 0;
         z-index: -1;
         display: flex;
