@@ -1,0 +1,18 @@
+p {
+    font-family: system-ui;
+    shape-outside: circle();
+}
+
+*{
+	background: #4A412A; /*uggliest color :)*/
+	color: white;
+}
+
+blockquote:before {
+    content: '"';
+    font-size: 29pt;
+    display: block;
+    position: absolute;
+    top: -8pt;
+    left: 0;
+}

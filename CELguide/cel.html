@@ -1,0 +1,175 @@
+<blockquote>"uncertainty is room to act, hope is a belief that what we do might matter" -Solnit</blockquote>
+
+
+
+<nav>
+
+<ul>
+	<a href="" title=test><li>A</li></a>
+	<a href="" title=test><li>V</li></a>
+	<a href="" title=test><li>X</li></a>
+	<a href="" title=test><li>H</li></a>
+</ul>
+<div  class=space></div>
+<svg viewbox="0 0 1 1">
+  <path d="h0 h1" fill="#fff"/>
+</svg>
+<ul class=contact>
+	<a href="https://twitter.com/hashtag/celanimation">Just browsing?</a>
+</ul>
+
+
+<svg class=roundcorner height=16pt style="left:0" viewbox="0 0 1 1">
+  <path d="M0 0  Q0 1 1 1 h-1" fill="#fff"/>
+</svg>
+
+<svg class=roundcorner height=16pt style="right:0" viewbox="0 0 1 1">
+  <path d="M0 1  q1 0 1 -1 v1" fill="#fff"/>
+</svg>
+
+</nav>
+
+
+<h1>why use open software</h1>
+<p>None should have to go into dept or break laws to even attempt exploring creative digital tools.
+Development of good tools should be funded by successful users and companies who care about furthering the development of the art, freeing students to focus on the craft and less on how to pay fees while learning.
+This will also closer align the goals of developers + artist, and with that clarifying the different softwares reasoning and target problem that it aims to solve.
+</p>
+
+<h1>what is a reel</h1>
+<p>A reel should according to one disneyanimation job advertisment show “animation that illustrates visual storytelling, believable expressions, emotional states, weight, physics, balance, appeal, entertainment, clear timing, and staging”
+</p>
+
+<h1>what is the road to becoming an animator</h1>
+<p>Its not a protected title. Congratulations, you are now an Animator! :)</p>
+
+<h1>No I mean, how to I get good enough to not embarrass myself?</h1>
+<p>At the end of each project you will find yourself having learned enough that you could do it better if you started again. And thats not even taking the fact that you will 62% into the project realize its out of scope and (seemingly) all of your ideas are not applicable in it, so the project will pivot and fall flat from your magical, greater than life origin vision.
+(This will be clearer to you after some practice, a skill of work to affect pay-of that you will grow for yourself over time)</p>
+
+<h1>oh, but how do I practice effectively?</h1>
+<p>Life drawing for studies; why? because animation is about describing the weight of whatever it is you are animating, life drawing is also about describing weight. Psychologicaly, experiencing a notion of weigth makes a thing physical. And if its physical, it is convincingly enough that it seem real. Animate means, etymonogically, to bring to life.</p>
+
+<h1>How do I structure my studies?</h1>
+<p>Decide on a scene (anything, but preferably something that matter to you emotionally) and in drawing that, you will find problems to answer in the animation. Learning is at it's absolute most effective when you find yourself not knowning AND figuring it out, only search for help if you have at least spent a few sessions on the same problem without finding the solution. Who knows, maybe "best practice" is not that good any more and you can find a better way with modern tools.</p>
+
+<h1>How to set goals</h1>
+<p>A weak goal you will find yourself brush aside with no sense or progress, possibly urging yourself towards a burnout. A to big goal crushes your senes of ability and motivation. A strong goal will work with you as a supporting pillar in your growth, professionally and personally.</p>
+
+<div class=bg></div>
+
+<link type=css/style src=a.css>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	max-width: 100vw;
+	
+	font-size: 12pt;
+	line-height: 1.5;
+}
+body{
+	background: #4A412A; /*uggliest color :)*/
+	color: white;
+	max-width: 80ch;
+	margin: 30pt;
+	min-width: 40ch;
+	margin-bottom: 30vh;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+p {
+	font-family: system-ui;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 90ch;
+    background: white;
+    color: black;
+    left: 0;
+    flex-flow: row;
+    padding: 3pt 16pt;
+    box-sizing: border-box;
+    align-items: center;
+}
+nav *{
+    color: black;
+}
+nav ul {
+    /* margin-left: 30pt; */
+}
+.contact {
+    /* background: rgba(0,0,0, 0.3); */
+    /* border: 2pt dashed lightblue; */
+    border-radius: 3pt;
+    padding: 0 8pt;
+}
+.contact a {
+    font-size: 10pt;
+}
+.space {
+    flex-grow: 1;
+}
+
+body>h1{
+	margin-top: 1em;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 1cm;
+    left: 90ch;
+    width: 4cm;
+    background: url("flowers.png") repeat;
+    height: 100vw;
+    /* opacity: 0.1; */
+    z-index: -10;
+    background-attachment: scroll;
+    background-image: url("flowers.png");
+    background-repeat: repeat;
+    background-position-x: 90ch;
+    /* background: red; */
+    animation: 60s infinite bg-scroll linear;
+}
+svg {
+    height: 24px;
+}
+svg.roundcorner {
+    position: absolute;
+    bottom: 100%;
+}
+nav:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 22pt;
+    background: linear-gradient(transparent, black);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+@keyframes bg-scroll {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 490% 0;
+  }
+}
+
+nav li {
+    background: black;
+    width: 20pt;
+    display: inline-block;
+}
+
+</style>
