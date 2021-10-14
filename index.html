@@ -4,7 +4,8 @@
 
 <!--<video controls autoplay muted playsinline src="reel.mp4"></video>-->
 
-<div class=card><video allowfullscreen controls height="200px" src="fall21.mp4"></video>
+<div class=card>
+	<video allowfullscreen controls width="318px" src="fall21.mp4" poster=fall21-thumbnail.png></video>
 
 	<p style="padding:0; margin-top: 2ch;">Karl Fredrik 🏡 Lundin</p>
 	<p>Hi, I like drawing characters. Currently studying motion design with focus on storytelling and team development at Hyper Island Karlskrona.</p>
@@ -56,6 +57,9 @@ html{
 	align-items: center;
 	cursor: default;
 }
+body{
+	/*background-color: grey;*/
+}
 .card{
 	margin:50px auto;
 	position: relative;
@@ -81,7 +85,8 @@ footer{
 	padding: 4ex;
 }
 nav ul {
-    background: #0892d0; box-shadow: inset 0 8px 8px #00000021;
+	background: #334897;
+	box-shadow: inset 0 8px 8px #00000021;
     padding: 1ex;
     color: white;
 	
@@ -97,6 +102,7 @@ nav a{
 	white-space: nowrap;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255,255,255, 0.3);
+	    text-shadow: 1px 1px rgb(0 0 0 / 50%);
 }
 
 b {
@@ -170,6 +176,13 @@ letter a {
     top: 0.5em;
     color: #ccc;
 }
+.gallery img{
+   filter: grayscale(1);
+   transition-duration: 1s;
+}
+.gallery img:hover{
+   filter: grayscale(0);
+}
 </style>
 
 
@@ -177,4 +190,5 @@ letter a {
 var namedcolors = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","DarkOrange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","RebeccaPurple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"]
 const randomNamedColor = namedcolors[Math.floor(Math.random() * namedcolors.length)];
 document.bgColor = randomNamedColor
+//document.getElementsByTagName("nav")[0].style.backgroundColor = randomNamedColor
 </script>
