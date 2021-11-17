@@ -1,195 +1,60 @@
-<meta charset=utf-8>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fredrik 🏡</title>
-
-<!--<video controls autoplay muted playsinline src="reel.mp4"></video>-->
-
-<div class=card>
-	<video allowfullscreen controls width="318px" src="fall21.mp4" poster=fall21-thumbnail.png></video>
-
-	<p style="padding:0; margin-top: 2ch;">Karl Fredrik 🏡 Lundin</p>
-	<p>Hi, I like drawing characters. Currently studying motion design with focus on storytelling and team development at Hyper Island Karlskrona.</p>
-
-	<p class=letter><a target=”_blank” title="hello :)" href="mailto:fredrik.lundin@hyperisland.se">Say hello!</a></p>
-
-	<section class=gallery>
-		<h2>Video Projects</h2>
-		<a href="storykids/index.html"><img src="storykids/storykids.png" height=50px></a>
-		<a href="imsorry/index.html"><img src="imsorry/imsorry.svg" height=50px></a>
-		<a  href="wdht/index.html"><target=”_blank”><img src="wdht/wdht.svg" height=30px></a>
-	</section>
-
-<!--
-<section>
-	<h2>Inspiration</h2>
-	<a href=>+</a>
-</section>
--->
-
-<nav  style="position:relative">
-	<img style="width:80px; position:absolute; top:-50px; left:0; pointer-events:none;" src=stickdude2.svg>
-	<ul>
-		<li><a target=”_blank” href="https://www.artstation.com/carfreelunch">Portfolio</a></li>
-		<li><a href="blog.html">Tools</a></li>
-		<li><a href="labs/index.html">Labs</a></li>
-		<li><a href="februray daily challenge/index.html">Sketchbook</a></li>
-		<li><a href="2d.html">2D</a></li>
-	</ul>
-</nav>
-
 <style>
+    *{
+        margin: 10pt;
+        padding: 0;
+    }
+    body{
+        background: tomato
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-*{
-	margin:0;
-	padding:0;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12pt;
-}
-*::selection{
-	background:  tomato;;
-	color: white;
-}
-html{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: default;
-}
-body{
-	/*background-color: grey;*/
-}
-.card{
-	margin:50px auto;
-	position: relative;
-	background: white;
-	box-shadow: 0 0 1cm #37496440;
-	max-width: 40ch;
-	border-radius: 2mm;
-	overflow: hidden;
-	opacity: 0.9;
-	text-align: center;
-}
-
-header{
-	display: flex;
-	justify-content: space-between;
-	margin: 1ex;
-}
-nav {
-	text-align:center;
-}
-footer{
-	text-align:center;
-	padding: 4ex;
-}
-nav ul {
-	background: #334897;
-	box-shadow: inset 0 8px 8px #00000021;
-    padding: 1ex;
-    color: white;
-	
-    display: flex;
-    justify-content: space-evenly;
-}
-nav li {
-    display: inline;
-    padding: 1ex;
-}
-nav a{
-	color: inherit;
-	white-space: nowrap;
-	text-decoration: none;
-	border-bottom: 1px solid rgba(255,255,255, 0.3);
-	    text-shadow: 1px 1px rgb(0 0 0 / 50%);
-}
-
-b {
-    background: black;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    display: inline-block;
-    padding: 5px 10px;
-}
-
-.card > p {
-    padding: 2ex ;
-    line-height: 1.5em;
-}
-
-/*video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    object-fit: cover;
-    filter: brightness(0.5);
-}*/
-
-.blink{
-	animation: blink 1s infinite;
-	display: none;
-	text-align: center;
-}
-@keyframes blink { 
-	50%{ opacity: 0.6; } 
-	100%{ opacity:1; } 
-}
-
-letter {
-    background: blue;
-    border-radius: 8px;
-    width: 18ch;
-    margin: auto;
-    color: white;
-    height: 6ex;
-
-    display: flex;
-    align-items: center;
-    place-content: center;
-
-	border-bottom: 10px solid darkblue;
-	transition: 0.1s;
-}
-letter:hover{
-	border-bottom: 3px solid darkblue;
-}
-letter a {
-	color: white;
-}
-.gallery{
-	background:#eee; 
-	padding:3ch; 
-	position:relative; 
-	display: flex; 
-	justify-content: space-evenly; 
-	align-items: center;
-	margin: 1ch;
-	border-radius: 1ch;
-}
-.gallery h2{
-    font-size: 10pt;
-    position: absolute;
-    top: 0.5em;
-    color: #ccc;
-}
-.gallery img{
-   filter: grayscale(1);
-   transition-duration: 1s;
-}
-.gallery img:hover{
-   filter: grayscale(0);
-}
+    }
+    iframe,img,video{
+        border-radius: 16pt;
+    }
+    iframe,img,video{
+        max-height: 100vh;
+        max-width: 100vw;
+        width: 100%;
+        object-fit: contain;
+    }
 </style>
 
+<center>
+<pre id=top>
+hi
+welcome to my portfolio
+currently studying motion design
+(available for internship - spring 2022)
+<a href="mailto:fredrik.lundin@hyperisland.se">fredrik.lundin@hyperisland.se</a>
 
-<script>
-var namedcolors = ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","DarkOrange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","RebeccaPurple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"]
-const randomNamedColor = namedcolors[Math.floor(Math.random() * namedcolors.length)];
-document.bgColor = randomNamedColor
-//document.getElementsByTagName("nav")[0].style.backgroundColor = randomNamedColor
-</script>
+
+<h2>mini projects</h2>
+
+frame by frame - wolf
+<video controls loop muted autoplay src="cel character - wolf 2.mp4"></video>
+
+after effects - duik
+<video controls loop muted autoplay src="3D simple character - pear on an LP.mkv"></video>
+
+shortfilm - imsorry - 2021
+<video controls loop muted autoplay src="short film - imsorry w8.mp4"></video>
+
+shortfilm - son - 2020
+<video controls loop muted autoplay src="stopmotion - son.mp4"></video>
+
+ae duik
+<img src="character rig duik.gif"></img>
+
+cloth sim
+<img src="cloth sim.gif"></img>
+
+ae character puppets 
+<img src="character puppet - egyptian.gif"></img>
+
+
+<h2>client projects</h2>
+we dont have time (<a href="https://www.wedonthavetime.org/brandmanual">service explainer video</a>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0TN89gJM-d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+storykids(<a href="https://www.storykids.com">product explainer video</a>)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cYKpLjRGoRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<a href=#top>back to the top</a>
