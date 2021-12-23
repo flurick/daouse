@@ -5,16 +5,16 @@
         box-sizing: border-box;
     }
     body{
-        -background: orange;
-        display: flex;
         height: 100vh;
         width: 100vw;
-        overflow: hidden;
+        background-image: url("noise.svg"); background-size: 200px;
     }
     body nav{
         padding: 30pt;
     }
     body nav ul{
+        width: 13ch;
+        margin: auto;
         background: rgb(65 66 74);
         background-image: url("noise.svg");
         border-radius: 5pt;
@@ -30,28 +30,23 @@
         font-family: sans-serif;
         color: white;
     }
-    body nav a {
+    body nav ul a {
         text-decoration: none;
         color: white;
-        text-transform: lowercase;
     }
 
     body main {
         display: block;
-        height: 100vh;
-        overflow-y: scroll;
         padding: 5pt;
     }
 
     iframe,img,video{
-        border-radius: 16pt;
-    }
-    iframe,img,video{
-        max-height: 100vh;
-        max-width:100%;
+        border-radius: 8pt;
+        max-height: 90%;
+        max-width: 90%;
     }
     iframe{
-        width: 100%;
+        width: 90%;
         height: 50vh;
     }
     
@@ -72,9 +67,14 @@
         padding:8ch;
     }
 
-    @media screen and (orientation: portrait) {
+    @media screen and (orientation: landscape) {
         nav{
-            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        main{
+            margin-left: 50ch;
         }
      }
 
@@ -83,11 +83,32 @@
 
 
 <nav>
+    <div style="color:grey; font-weight:bold">
+        <pre>
+        hello!
+
+        welcome to my portfolio
+        I like drawing characters,
+        and am currently studying 
+        motion design.
+
+        <i style="color:black">available for internship: 
+            spring 2022</i>
+
+        ✉️ <a href="mailto:fredrik.lundin@hyperisland.se">fredrik.lundin@hyperisland.se</a>
+        🖌️ <a href="https://www.artstation.com/carfreelunch">more on artstation...</a> 
+        
+    
+    </pre>
+    </div>
     <ul>
+        <li style="font-size:x-small; opacity:0.62; text-align:center">On this page:</li>
         <li><a href=#minis>Projects</a></li>
         <li><a href=#shorts>Shorts</a></li>
         <li><a href=#labs>Labs</a></li>
         <li><a href=#clients>Clients</a></li>
+        
+        <li style="font-size:x-small; opacity:0.62; text-align:center">2021</li>
     </ul>
 </nav>
 
@@ -95,22 +116,15 @@
 
     <div id=top></div>
     <pre>
-hi
-welcome to my portfolio
-I like drawing characters
-currently studying motion design
-(available for internship - spring 2022)
-<a href="mailto:fredrik.lundin@hyperisland.se">fredrik.lundin@hyperisland.se</a>
-<a href="https://www.artstation.com/carfreelunch">more on artstation...</a> 
 
 
-<h2 id=minis>mini personal projects</h2>
+<h2 id=minis>PROJECTS</h2>
 
 wolf - based on a workshop task (2021)
 <video controls loop muted autoplay src="cel character - wolf 2.mp4"></video>
 
 pear LP - mixing 2D and 3D animations (2020)
-<video controls loop muted autoplay src="3D simple character - pear on an LP.mkv"></video>
+<video loop muted autoplay src="pear.mp4"></video>
 
 
 <div class=row>
@@ -132,7 +146,7 @@ pear LP - mixing 2D and 3D animations (2020)
 
 
 
-<h1 id=shorts></h1>
+<h1 id=shorts>SHORTS</h1>
 shortfilm - imsorry (2021)
 My film project for the fall which I produced on my own 
 and used as an opportunity to explore working iteratively 
@@ -149,10 +163,10 @@ edited
 
 - - - - - -
 
-<h1 id=labs>Labs</h1>
+<h1 id=labs>LABS</h1>
 <div class=pimg>
     <p>base rig w/ ae duik</p>
-    <img src="character rig duik.gif"></img>
+    <img src="character rig duik.apng"></img>
 </div>
 
 <div class=pimg>
@@ -174,14 +188,21 @@ edited
 
 
 
-<h2 id=clients>client projects</h2>
+<h2 id=clients>CLIENT PRO</h2>
 <p>A big part of Hyper Island is to work directly with clients, working on their real brief.</p>
 
-we dont have time (<a href="https://www.wedonthavetime.org/brandmanual">service explainer video</a>)
+
+We dont have time (<a href="https://www.wedonthavetime.org/brandmanual">service explainer video</a>)
+
 took part as admin + editing, compositing and animation
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0TN89gJM-d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-storykids(<a href="https://www.storykids.com">product explainer video</a>)
+
+
+Storykids(<a href="https://www.storykids.com">product explainer video</a>)
+
 took part as art director + writer, animation and sound design.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cYKpLjRGoRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
