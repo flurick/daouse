@@ -1,33 +1,100 @@
 <style>
     *{
-        margin: 10pt;
+        margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     body{
-        background: orange
-
+        -background: orange;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
     }
+    body nav{
+        padding: 30pt;
+    }
+    body nav ul{
+        background: rgb(65 66 74);
+        background-image: url("noise.svg");
+        border-radius: 5pt;
+        padding: 10pt;
+        list-style: none; 
+        box-shadow: 0px 64px 80px rgba(0, 0, 0, 0.25), 0px 25px 25px rgba(0,0,0, 0.2), 0px 12px 15px rgba(0,0,0, 0.1), 0px 5px 7px rgba(0,0,0, 0.1), 0px 2px 3px rgba(44, 19, 53, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    body nav li {
+        padding: 5pt;
+        font-family: sans-serif;
+        color: white;
+    }
+    body nav a {
+        text-decoration: none;
+        color: white;
+        text-transform: lowercase;
+    }
+
+    body main {
+        display: block;
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 5pt;
+    }
+
     iframe,img,video{
         border-radius: 16pt;
     }
     iframe,img,video{
         max-height: 100vh;
-        max-width: 90vw;
+        max-width:100%;
+    }
+    iframe{
         width: 100%;
-        object-fit: contain;
+        height: 50vh;
     }
     
     .row{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .row video{
         width: 30%;
     }
+
+    .pimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pimg p{
+        padding:8ch;
+    }
+
+    @media screen and (orientation: portrait) {
+        nav{
+            display: none;
+        }
+     }
+
 </style>
 
-<center>
-<pre id=top>
+
+
+<nav>
+    <ul>
+        <li><a href=#minis>Projects</a></li>
+        <li><a href=#shorts>Shorts</a></li>
+        <li><a href=#labs>Labs</a></li>
+        <li><a href=#clients>Clients</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <div id=top></div>
+    <pre>
 hi
 welcome to my portfolio
 I like drawing characters
@@ -37,7 +104,7 @@ currently studying motion design
 <a href="https://www.artstation.com/carfreelunch">more on artstation...</a> 
 
 
-<h2>mini personal projects</h2>
+<h2 id=minis>mini personal projects</h2>
 
 wolf - based on a workshop task (2021)
 <video controls loop muted autoplay src="cel character - wolf 2.mp4"></video>
@@ -46,17 +113,18 @@ pear LP - mixing 2D and 3D animations (2020)
 <video controls loop muted autoplay src="3D simple character - pear on an LP.mkv"></video>
 
 
-
-
-
-- - - - - -
-
-
-
-
 <div class=row>
     <video loop muted autoplay src="sphere-mask.mp4"></video>
+<<<<<<< Updated upstream
     <img style="border-radius: 50%; width:234px" src=ångan.gif></img>
+=======
+
+        <img style="
+        width: 250px;
+        height: 250px;
+        box-shadow: 0 0 50px #eee;
+        border-radius: 50%;" src=ångan.gif></img>
+>>>>>>> Stashed changes
     <video loop muted autoplay src="circle mograph animatic.mp4"></video>
 
 </div>
@@ -68,7 +136,7 @@ pear LP - mixing 2D and 3D animations (2020)
 
 
 
-
+<h1 id=shorts></h1>
 shortfilm - imsorry (2021)
 My film project for the fall which I produced on my own 
 and used as an opportunity to explore working iteratively 
@@ -85,16 +153,21 @@ edited
 
 - - - - - -
 
+<h1 id=labs>Labs</h1>
+<div class=pimg>
+    <p>base rig w/ ae duik</p>
+    <img src="character rig duik.gif"></img>
+</div>
 
+<div class=pimg>
+    <img src="cloth sim.gif"></img>
+    <p>cloth sim w/ clo3d</p>
+</div>
 
-base rig w/ ae duik
-<img src="character rig duik.gif"></img>
-
-cloth sim w/ clo3d
-<img src="cloth sim.gif"></img>
-
-moving painting 2/4 w/ ae puppets
-<img src="character puppet - egyptian.gif"></img>
+<div class=pimg>
+    <p>moving painting 2/4 w/ ae puppets</p>
+    <img src="character puppet - egyptian.gif"></img>
+</div>
 
 
 
@@ -105,7 +178,9 @@ moving painting 2/4 w/ ae puppets
 
 
 
-<h2>client projects in school team </h2>
+<h2 id=clients>client projects</h2>
+<p>A big part of Hyper Island is to work directly with clients, working on their real brief.</p>
+
 we dont have time (<a href="https://www.wedonthavetime.org/brandmanual">service explainer video</a>)
 took part as admin + editing, compositing and animation
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0TN89gJM-d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
