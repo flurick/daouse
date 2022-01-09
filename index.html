@@ -53,6 +53,7 @@
     .row{
         display: flex;
         justify-content: space-evenly;
+        flex-direction: column;
     }
     .row video{
         width: 30%;
@@ -62,6 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     .pimg p{
         padding:8ch;
@@ -76,6 +78,9 @@
         main{
             margin-left: 50ch;
         }
+       .row, .pimg{
+            flex-direction: row;
+       }
      }
 
 </style>
@@ -107,6 +112,9 @@
         <li><a href=#shorts>Shorts</a></li>
         <li><a href=#labs>Labs</a></li>
         <li><a href=#clients>Clients</a></li>
+       
+        <li style="font-size:x-small; opacity:0.62; text-align:center">Other Topics:</li>>
+        <li><a href=/notes>Notes</a></li>
         
         <li style="font-size:x-small; opacity:0.62; text-align:center">2021</li>
     </ul>
@@ -121,7 +129,7 @@
 <h2 id=minis>PROJECTS</h2>
 
 wolf - based on a workshop task (2021)
-<video controls loop muted autoplay src="cel character - wolf 2.mp4"></video>
+<video controls loop muted src="cel character - wolf 2.mp4"></video>
 
 pear LP - mixing 2D and 3D animations (2020)
 <video loop muted autoplay src="pear.mp4"></video>
@@ -153,7 +161,7 @@ and used as an opportunity to explore working iteratively
 with everything script writing, 2D animation, 3D modeling 
 and also getting to know what differ in compositiing 
 between AE, Nuke/Natron and Davinci. 
-<video controls loop muted autoplay src="imsorry.mp4"></video>
+<video controls src="imsorry.mp4"></video>
 
 shortfilm - son (2020)
 edited 
