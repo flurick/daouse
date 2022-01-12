@@ -13,7 +13,8 @@
         padding: 30pt;
     }
     body nav ul{
-        width: 13ch;
+        width: 20ch;
+        text-align: center;
         margin: auto;
         background: rgb(65 66 74);
         background-image: url("noise.svg");
@@ -70,6 +71,17 @@
         padding:8ch;
     }
 
+    a.text-button {
+        background: black;
+        color: white;
+        padding: 1ch 3ch;
+        border-radius: 2px;
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+
     @media screen and (orientation: landscape) {
         nav{
             position: fixed;
@@ -89,7 +101,7 @@
 
 </style>
 
-
+<title>daou</title>
 
 <nav>
     <div style="color:grey; font-weight:bold">
@@ -100,9 +112,6 @@
         I like drawing characters,
         and am currently studying 
         motion design.
-
-        <i style="color:black">available for internship: 
-            spring 2022</i>
 
         ✉️ <a href="mailto:fredrik.lundin@hyperisland.se">fredrik.lundin@hyperisland.se</a>
         🖌️ <a href="https://www.artstation.com/carfreelunch">more on artstation...</a> 
@@ -119,8 +128,10 @@
        
         <li style="font-size:x-small; opacity:0.62; text-align:center">Other Topics:</li>
         <li><a href=/daouse/notes>Notes</a></li>
+        <li><a href=tui>GUI & TUI</a></li>
+        <li><a href=aci.svg>The most important ideas.</a></li>
         
-        <li style="font-size:x-small; opacity:0.62; text-align:center">2021</li>
+        <li style="font-size:x-small; opacity:0.62; text-align:center">2022</li>
     </ul>
 </nav>
 
@@ -232,4 +243,4 @@ Team: Jo, Melinda, Rebecca, Harald & I
 
 
 
-<a href=#top>back to the top</a>
+<a href=#top class=text-button>back to the top ^</a>
