@@ -25,11 +25,6 @@
         font-size: 16pt;
     }
 
-    @font-face{
-        font-familty:"Montserrat";
-        src:url("https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat-Black.woff");
-    }
-
     footer {
         height: 40ch;
         display: flex;
@@ -63,10 +58,6 @@
         color: white;
     }
 
-    nav img {
-        border-radius: 0;
-    }
-
     main {
         display: block;
     }
@@ -80,16 +71,13 @@
         width: 90%;
         height: 50vh;
     }
-
     .row{
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
     }
-   .row video {
-          width: auto;
-          margin: 5vw;
-     }
+    .row div{
+        display: inline-grid;
+    }
 
     .pimg{
         display: flex;
@@ -101,9 +89,9 @@
         padding:8ch;
     }
 
-    section img{
-        min-width: 300px;
-        min-height: 300px;
+    section img, section video{
+        width: 300px;
+        height: 300px;
         background: #eee;
     }
 
@@ -131,9 +119,6 @@
         }
        .pimg{
             flex-direction: row;
-       }
-       .row video{
-           width: 30%;
        }
      }
 
@@ -184,9 +169,11 @@
         <p>En andlig uppföljare till Hundhotellet (2000). En helt vanlig tågresa får ett oväntat stopp, men vad händer sen?</p>
     </div>
     <div>
-        <img src="thumbnail-hyrliv.png"></img>
+        <video autoplay playsinline  muted loop disablepictureinpicture>
+            <source src=walk1of5.mp4 type="video/mp4">
+        </video>
         <h2>Hyrliv</h2>
-        <p>I en modern värld där allt hyrs för att spara tid, vad gör vi med den?</p>
+        <p>I en modern värld där allt tillfäligt hyrs för att spara tid, vad gör vi med den?</p>
     </div>
     <div>
         <img src="thumbnail-cp.png"></img>
