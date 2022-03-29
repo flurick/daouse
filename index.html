@@ -8,6 +8,11 @@
 
 <nav class=card>
     <img src=logo/daou.svg height=50spx>
+    <div>
+        <a href="/index.html" class="current">Projects</a>
+        <a href="practice/index.html">Practice</a>
+        <a href="labs/index.html">Labs</a>
+    </div>
     <img src=se.svg height=24px>
 </nav>
 
@@ -57,17 +62,17 @@
 
     <p>Hör gärna av dig om du också tycker om film och vill ta del av våra projekt!</p>
     <div class="row small">
-        <img src="icons/artstation.png">
-        <img src="icons/letter.png">
-        <img src="icons/linkedin.png">
-        <img src="icons/twitter.png">
+        <!--<a href=""><img src="icons/artstation.png"></a>-->
+        <a href="mailto:fredrik@daou.se"><img src="icons/letter.png"></a>
+        <a href="https://www.linkedin.com/company/daou-se/"><img src="icons/linkedin.png"></a>
+        <!--<a href=""><img src="icons/twitter.png"></a>-->
     </div>
     <hr>
-    <p>Vi vill också tacka allt stöd som finns att få, tack</p>
+    <p>Några andra som också är intresserade av animation</p>
     <div class="row small">
-        <img src=logo/svt.png>
-        <img src=logo/sfi.png>
-        <img src=logo/aie.png>
+        <a href=https://omoss.svt.se/> <img src=logo/svt.png> </a>
+        <a href=https://www.filminstitutet.se/> <img src=logo/sfi.png> </a>
+        <a href=https://www.animationineurope.eu/> <img src=logo/aie.png> </a>
     </div>
 
 
@@ -100,7 +105,21 @@
         padding: 10pt 20pt !important;
         font-size: 16pt;
     }
-
+    nav div a{
+        color: #eee;
+        text-decoration: none;
+        margin: 1ch;
+    }
+    nav div a:hover{
+        color: #fff;
+        text-shadow: 0 0 24px white;
+    }
+    nav div a.current{
+        color: #aaa;
+        text-shadow: none;
+        cursor: default;
+        border-bottom: 2px solid rgba(255,255,255, 0.3);
+    }
     footer {
         height: 40ch;
         display: flex;
